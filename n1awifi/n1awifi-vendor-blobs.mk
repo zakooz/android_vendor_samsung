@@ -83,6 +83,17 @@ PRODUCT_COPY_FILES += \
     vendor/samsung/n1awifi/proprietary/etc/PDC.ini.txt:system/etc/PDC.ini.txt \
     vendor/samsung/n1awifi/proprietary/etc/srm.bin:system/etc/srm.bin
 
+# Sound
+PRODUCT_COPY_FILES += \
+    vendor/samsung/n1awifi/proprietary/vendor/lib/liblvverx_3.20.03.so:system/vendor/lib/liblvverx_3.20.03.so \
+    vendor/samsung/n1awifi/proprietary/vendor/lib/liblvvetx_3.20.03.so:system/vendor/lib/liblvvetx_3.20.03.so 
+
+PRODUCT_COPY_FILES += \
+    vendor/samsung/n1awifi/proprietary/lib/libasound.so:system/lib/libasound.so \
+    vendor/samsung/n1awifi/proprietary/lib/libaudiosa.so:system/lib/libaudiosa.so \
+    vendor/samsung/n1awifi/proprietary/lib/libmysound.so:system/lib/libmysound.so \
+    vendor/samsung/n1awifi/proprietary/lib/soundfx/libaudiosa_sec.so:system/lib/soundfx/libaudiosa_sec.so
+
 # SRP Audio driver for Samsung Exynos firmware
 PRODUCT_COPY_FILES += \
     vendor/samsung/n1awifi/proprietary/vendor/firmware/srp_cga.bin:system/vendor/firmware/srp_cga.bin \
